@@ -1,0 +1,16 @@
+%ellipsis {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+%container-actions {
+  padding: 2px 0;
+}
+
+%disabled-styles {
+  opacity: 50%;
+  cursor: default;
+  pointer-events: none;
+}

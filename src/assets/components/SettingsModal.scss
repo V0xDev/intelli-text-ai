@@ -1,0 +1,24 @@
+@use "sass:map";
+@use "@/assets/basic/variables.scss" as *;
+@use "@/assets/basic/extends.scss" as *;
+
+%flex-basic {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-model {
+  @extend %flex-basic;
+  gap: $base-gap + 7px;
+
+  :deep(.settings-item) {
+    @extend %flex-basic;
+    gap: $base-gap + 2px;
+  }
+
+  .button-save {
+    :deep(.ui-button) {
+      align-self: end;
+    }
+  }
+}

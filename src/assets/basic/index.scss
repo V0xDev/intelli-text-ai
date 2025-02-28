@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+$scrollbarBorderColor: #f5f5f5;
+$scrollBarRadius: 10px;
+
+// === reset-style
+*:not(.ui-icon) {
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#html,
+body,
+#app {
+  width: 100%;
+  height: 100dvh;
+}
+
+body {
+  background: map.get($base, main);
+  overflow-x: hidden;
+}
+
+#app {
+  margin: 0 auto;
+}
+// ===
+
+// === scroll-style
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: $scrollBarRadius;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: $scrollBarRadius;
+  background-color: map.get($neutral, 40);
+  border: 3px solid #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: map.get($neutral, 80);
+}
+// ===
